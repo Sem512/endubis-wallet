@@ -1,0 +1,12 @@
+.phones{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    height:600px;
+    margin:50px;
+    align-items: center;
+}
+.phones-info{
+    max-width: 600px;
+}
