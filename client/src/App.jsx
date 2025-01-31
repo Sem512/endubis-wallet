@@ -6,6 +6,7 @@ import OneAccount from './components/OneAccount';
 import Visa from './components/Visa';
 import Fiat from './components/Fiat';
 import Phones from './components/Phones';
+import Paragraph from './components/Paragraph';
 
 function App() {
   const lst = {photo:"VISA CARD PIC", 
@@ -37,6 +38,7 @@ function App() {
       <Phones/>
       <Visa photo={man.photo} sentence={man.sentence} para={man.para} info1_t={man.info1_t} info2_t={man.info2_t} info1={man.info1} info2={man.info2} info1Pic={man.info1Pic} info2Pic={man.info2Pic}/>
       <Fiat />
+      <Paragraph/>
     </div>
   );
 }

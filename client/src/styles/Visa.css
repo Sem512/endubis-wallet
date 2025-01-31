@@ -1,11 +1,9 @@
 .visa{
-    margin-top: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: yellow;
     height:600px;
-    margin:50px;
 }
 .info{
     max-width: 500px;

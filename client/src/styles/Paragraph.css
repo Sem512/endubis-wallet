@@ -1,0 +1,21 @@
+#para{
+    background-color:red;
+    height:650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#para span{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: start;
+}
+
+#para p{
+    text-align: start;
+    font-size: 70px;
+    font-weight: bold;
+    color: black
+}
