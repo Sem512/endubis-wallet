@@ -4,6 +4,7 @@ import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import OneAccount from './components/OneAccount';
 import Visa from './components/Visa';
+import Fiat from './components/Fiat';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <LandingPage/>
       <OneAccount/>
       <Visa />
+      <Fiat />
     </div>
   );
 }

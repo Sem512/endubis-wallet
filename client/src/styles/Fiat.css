@@ -1,0 +1,35 @@
+.Fiat{
+    background-color: yellow;
+    display:flex;
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Fiat div{
+    margin: 40px;
+    width: 50%;
+}
+
+.Fiat div h1::after{
+    content: "Crypto Independent";
+    color:red;
+}
+
+.FiatComponents{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.FiatComponents:hover{
+    box-shadow: 3px 3px 3px gray;
+    transform:scale(1.04) ;
+    transition: 0.3s;
+}
