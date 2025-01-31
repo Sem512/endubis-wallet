@@ -1,0 +1,28 @@
+.visa{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    max-width: 500px;
+    text-align: left;
+    background-color: red;
+}
+.info ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    background-color: blue;
+    list-style-type: none;
+}
+.info li{
+    max-width: 180px;
+    background-color: green;
+    display: flex;
+    margin-right: 80px;
+}
+.info p{
+    font-size: 10px;
+
+}
