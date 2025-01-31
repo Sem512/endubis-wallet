@@ -1,4 +1,4 @@
-import '../pages/VerticalDiv.css'
+import '../styles/VerticalDiv.css'
 
 export default function VerticalDiv({title, para, photo}){
     return(
