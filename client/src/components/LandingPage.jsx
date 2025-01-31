@@ -2,7 +2,7 @@ import VerticalDiv from "./VerticalDiv"
 
 export default function LandingPage(){
     return(
-        <div>
+        <div className="landing-page">
             <VerticalDiv/>
         </div>
     )

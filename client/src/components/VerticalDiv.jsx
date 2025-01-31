@@ -1,3 +1,4 @@
+import '../pages/VerticalDiv.css'
 
 export default function VerticalDiv(){
     return(
