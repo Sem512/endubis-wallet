@@ -1,10 +1,10 @@
 
-export default function VerticalDiv(){
+export default function VerticalDiv({title, para, photo}){
     return(
         <div>
-            <h1>Your</h1>
-            <p>Become independent</p>
-            <span>Photo</span>
+            <h1>{title}</h1>
+            <p>{para}</p>
+            <span>{photo}</span>
         </div>
     )
 }
