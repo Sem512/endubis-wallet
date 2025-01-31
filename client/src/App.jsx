@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import OneAccount from './components/OneAccount';
+import Visa from './components/Visa';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <LandingPage/>
       <OneAccount/>
+      <Visa />
     </div>
   );
 }
