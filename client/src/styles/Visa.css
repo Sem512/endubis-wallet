@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(235, 0, 70, 1);
-    height:600px;
+    background-color: transparent;
+    height:100vh;
+    padding: 70px;
 }
 .info{
     height: 100%;

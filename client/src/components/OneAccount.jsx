@@ -1,8 +1,10 @@
 import OneAccountFeatures from "./OneAccountFeatures"
 import "../styles/OneAccount.css"
+import { Parallax } from "react-scroll-parallax"
 
 export default function OneAccount(){
     return(
+        
         <div className="OneAccount">
             <div>
                 <h1>One Account.</h1>

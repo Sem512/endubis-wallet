@@ -1,19 +1,34 @@
 .phones{
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     text-align: start;
     height:650px;
     align-items: start;
-    padding:40px;
-    padding-bottom: 0px;
+    padding:150px 20px 0px;
     margin-bottom: 0px;
 }
 .phones-info{
     width:55%;
 }
 
-.pic-holder{
+.pic-holder {
+    position: relative;
+    width: 45%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Prevents overflow */
+    margin-right:60px;
+}
+
+.pic-holder img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* .pic-holder{
     margin-top: 40px;
     margin-right: 40px;
     width: 45%;
@@ -30,7 +45,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size:contain;
-}
+} */
 
 .phones h2::before{
     content: "Your";

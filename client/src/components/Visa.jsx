@@ -1,4 +1,5 @@
 import '../styles/Visa.css'
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Visa({photo, sentence, para, info1_t, info2_t, info1, info2, info1Pic, info2Pic}){
 

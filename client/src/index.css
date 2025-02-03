@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0px 60px; 
+  padding: 0px  60px; 
   font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,5 +8,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /*uncomment this shi when ur done*/
   background-color: rgba(235, 0, 70, 1);
+}
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 30px;
+}
+
+.App>div{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
