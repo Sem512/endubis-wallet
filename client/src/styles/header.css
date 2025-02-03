@@ -1,11 +1,49 @@
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width:100%;
+    background-color: rgba(235, 0, 70, 1) ;
 }
 
 header ul{
   display: flex;
   gap:40px;
   justify-content: space-between;
+  margin-right: 30rem;
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header ul a{
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a span{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(white 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s; /*change after the size immediately*/
+
+}
+
+header ul li a span:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+#logo{
+  background-color: transparent;
+}
+
+#logo{
+  font-weight: bolder;
+  font-size: 1.8rem;
 }

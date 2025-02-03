@@ -3,10 +3,13 @@ import '../styles/header.css'
 export default function Header(){
     return(
         <header>
-        <span>Endubis</span>
+            <div id="logo">
+               <img src="Endubis.png" alt="fd" />
+            </div>
+        
         <ul>
-        <li>Fiat</li>
-        <li>Crypto</li>
+        <li><a href="crash"><span>FIAT</span></a></li>
+        <li><a href="crash"><span>CRYPTO</span></a></li>
         </ul>
         </header>
     )

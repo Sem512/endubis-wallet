@@ -1,11 +1,52 @@
 .phones{
-    background-color: red;
+    background-color: white;
     display: flex;
-    justify-content: space-around;
-    text-align: left;
-    height:600px;
-    align-items: center;
+    justify-content: center;
+    text-align: start;
+    height:650px;
+    align-items: start;
+    padding:40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .phones-info{
-    max-width: 600px;
+    width:55%;
+}
+
+.pic-holder{
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 45%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.pic-holder img{
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:contain;
+}
+
+.phones h2::before{
+    content: "Your";
+    color: black;
+}
+
+.phones h2{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    color: rgba(235, 0, 70, 1);
+}
+
+.phones p{
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1;
 }

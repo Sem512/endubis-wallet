@@ -1,0 +1,39 @@
+.landing-page{
+    height: 650px;
+    display: flex;
+    background-color: rgba(235, 0, 70, 1);
+    width: 100%;
+}
+
+.landing-page>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin:0px 15px;
+    width: 100%;
+}
+
+.landing-page>div:nth-of-type(1){
+   background-color: transparent;
+}
+
+.landing-page>div:nth-of-type(1) #deets{
+    padding-bottom:10px;
+ }
+ 
+
+.landing-page>div:nth-of-type(2n) h1{
+    background-color: transparent;
+    line-height: 7.6rem;
+    height:134.4px;
+}
+
+.landing-page>div:nth-of-type(2n) #deets{
+    white-space: pre-line;
+    height:32px;
+}
+
+.landing-page>div:nth-of-type(4){
+    margin-right: 0px;
+}

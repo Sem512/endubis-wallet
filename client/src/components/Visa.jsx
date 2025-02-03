@@ -13,7 +13,7 @@ export default function Visa({photo, sentence, para, info1_t, info2_t, info1, in
                 <ul>
                     <li>
                         <div>
-                            <p>{info1Pic}</p>
+                            <img src={info1Pic} alt="" />
                         </div>
                         <div>
                             <span>{info1_t}</span>
@@ -22,7 +22,7 @@ export default function Visa({photo, sentence, para, info1_t, info2_t, info1, in
                     </li>
                     <li>
                         <div>
-                            <p>{info2Pic}</p>
+                            <img src={info2Pic} alt="" />
                         </div>
                         <div>
                             <span>{info2_t}</span>

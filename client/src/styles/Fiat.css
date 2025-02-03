@@ -1,13 +1,14 @@
 .Fiat{
-    background-color: yellow;
+    background-color: white;
     display:flex;
+    height:650px;
+    padding: 0 60px;
 }
 
 .con{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 0.9rem;
+    padding-top:20px;
+    margin: 0px;
 }
 
 
@@ -22,14 +23,39 @@
 }
 
 .FiatComponents{
-    background-color: red;
+    padding: 15px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 25%;
+    text-align: start;
+    border-radius: 25px;
+}
+
+.FiatComponents img{
+    height: 32px;
+    width:64px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .FiatComponents:hover{
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px 3px gray;
     transform:scale(1.04) ;
     transition: 0.3s;
+}
+
+.con-deets h1{
+    font-size: 4rem;
+    text-align: start;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.con-deets p{
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: 500;
 }

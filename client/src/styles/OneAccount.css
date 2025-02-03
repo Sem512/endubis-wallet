@@ -1,29 +1,59 @@
 .OneAccount{
     display: flex;
     width: 100%;
-    background-color: green;
+    background-color: white;
 }
 
 
 .OneAccount>div:nth-of-type(1){
-    background-color: red;
+    display: flex;
     width: 50%;
-    margin: 40px;
+    margin: 0px 60px;
+    font-size: 3.35rem;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 0px;
+    color:rgba(235, 0, 70, 1);
 }
 
+
 .OneAccount>div:nth-of-type(2){
-    margin:30px;
+    margin:40px;
     width: 50%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
 }
 
+.OneAccountFeatures p{
+    color: black;
+    padding: 0px;
+    margin: 2px;
+}
+
+.OneAccountFeatures p:nth-child(2){
+   font-weight: bolder; 
+   font-size: 1.1rem;
+}
+
+.OneAccountFeatures p:nth-child(3){
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.2;
+ }
+ 
+
 .OneAccountFeatures{
     margin:20px;
-    padding: 10px;
-    justify-content: center;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
+    padding: 1px;
+    text-align: start;
+}
+
+
+#icon{
+    margin: 0px;
+    padding-top: 5px;
+    height: 32px;
+    width: 60px;
 }
