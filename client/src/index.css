@@ -23,6 +23,7 @@ html{
   scroll-snap-align: start;
   scroll-behavior: smooth;
   scroll-snap-stop:always;
+  overflow-x: hidden;
 }
 
 

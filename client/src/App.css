@@ -10,6 +10,7 @@
 .App{
   transition: background-color 0.5s ease;
   width: 100%;
+  overflow-x: hidden;
 }
 
 
