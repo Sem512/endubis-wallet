@@ -8,8 +8,8 @@ export default function Header(){
             </div>
         
         <ul>
-        <li><a href="crash"><span>FIAT</span></a></li>
-        <li><a href="crash"><span>CRYPTO</span></a></li>
+        <li><a href="crash"><span className='link'>FIAT</span></a></li>
+        <li><a href="crash"><span className='link'>CRYPTO</span></a></li>
         </ul>
         </header>
     )

@@ -1,3 +1,41 @@
 footer{
     background-color: white;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Endubis{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    
+}
+
+.Endubis img{
+    padding-left: 30px;
+    width: 150px;
+    height: 80px;
+}
+
+.Endubis a{
+    color: black;
+}
+
+
+.trademarks{
+    display:flex;
+    padding:0px 40px;
+}
+
+.purpose{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.rights span{
+    font-family: 'Arial';
 }

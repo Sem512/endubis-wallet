@@ -6,6 +6,7 @@
     background-image: url('../images/bg_licensed.svg');
     background-position: 100% 120%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .con{
@@ -15,10 +16,10 @@
 }
 
 
-.Fiat div{
+/* .Fiat div{
     margin: 40px;
     width: 50%;
-}
+} */
 
 .Fiat div h1::after{
     content: "Crypto Independent";
@@ -37,7 +38,7 @@
     border-radius: 8px;
     transition: background-color 0.4s, box-shadow 0.4s;
     padding:1rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .FiatComponents img{
@@ -64,5 +65,46 @@
 .con-deets p{
     text-align: start;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 500;
+}
+
+@media(max-width:480px){
+    .Fiat{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        padding:15px;
+        background-image: none;
+    }
+
+    .con{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        min-width: 100%;
+    }
+
+    .FiatComponents:hover{
+        transform:scale(1.01) ;
+    }
+
+    .FiatComponents{
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+    
+    .con-deets h1{
+        font-size: 2.15rem;
+    }
+
+    .con-deets p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .con-deets h1{
+        font-size: 2.5rem;
+    }
 }

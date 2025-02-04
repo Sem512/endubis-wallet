@@ -3,32 +3,38 @@
 
 body {
   margin: 0;
-  margin-top: 7vh;
-  padding: 0px  60px; 
+  padding: 0px 60px;
   font-family:'BR Hendrix', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*uncomment this shi when ur done*/
-  background-color: rgba(235, 0, 70, 1);
+  background-color:rgba(235, 0, 70, 1);
 }
 
 html{
   scroll-snap-type: y mandatory;
-  scroll-padding-bottom: 30px;
+  scroll-padding-bottom: 10px;
   scroll-padding-top: 40px;
 }
 
 .App>div{
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-behavior: smooth;
-  scroll-snap-stop: always;
+  scroll-snap-stop:always;
 }
 
 
 @media(max-width:480px){
   body{
-  padding:0 10px;
+    padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: yellow;
 }
+
 }

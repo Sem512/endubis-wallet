@@ -19,3 +19,9 @@
     font-weight: bold;
     color: black
 }
+
+@media(max-width:480px){
+    #para p, #para span{
+    font-size: 2.15rem;
+    }
+}

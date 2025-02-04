@@ -12,7 +12,7 @@
     color: #ffffff;
     font-size: 1rem;
     line-height: 1;
-    font-weight:300;
+    font-weight:500;
     text-align: start;
     margin: 1px;
 }
@@ -27,3 +27,12 @@
     }
 }
 
+@media (max-width: 1200px){
+    #hero{
+        font-size:4rem;
+    }
+
+    #deets{
+        font-size:0.9rem;
+    }
+}

@@ -6,8 +6,10 @@
     background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: contain;
     inset:60px;
-    height: 100vh;
+    height: 90vh;
 }
 
 
@@ -45,7 +47,7 @@
 
 .OneAccountFeatures p:nth-child(3){
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.2;
  }
  
@@ -101,4 +103,23 @@
         margin: 0px;
     }
     
+}
+    @media(max-width:1200px){
+        .OneAccount{
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .OneAccount>div:nth-of-type(1){
+            font-size: 2rem;
+            text-align: start;
+            margin: 25px 25px 0px;
+            width: 50%;
+        }
+
+        .OneAccount>div:nth-of-type(2){
+            row-gap: 1rem;
+            column-gap: 2rem    ;
+        }
 }
