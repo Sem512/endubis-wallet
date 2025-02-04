@@ -1,9 +1,8 @@
 
 #hero{
     font-size: 7rem;
+    line-height: 0.9;
     font-weight:900;
-    padding-left: 10px;
-    padding-top: 0px;
     margin: 1px;
     color: #ffffff;
 }
@@ -12,13 +11,19 @@
     display: flex;
     color: #ffffff;
     font-size: 1rem;
-    line-height: 1rem;
-    font-weight: 500;
+    line-height: 1;
+    font-weight:300;
     text-align: start;
     margin: 1px;
 }
 
 #img{
     margin:0.5rem 0;
+}
+
+@media (max-width: 480px) {
+    #hero{
+        font-size: 3rem;
+    }
 }
 

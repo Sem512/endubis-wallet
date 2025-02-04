@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <header>
             <div id="logo">
-               <img src="Endubis.png" alt="fd" />
+               <img src={require('../images/Endubis - Horizontal Logo - White.png')} alt="fd" />
             </div>
         
         <ul>

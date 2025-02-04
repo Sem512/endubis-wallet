@@ -10,6 +10,11 @@ header{
     z-index: 10;
 }
 
+header img{
+  height:70px;
+  width: 130px;
+}
+
 header ul{
   display: flex;
   gap:40px;

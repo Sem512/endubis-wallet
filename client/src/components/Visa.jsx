@@ -6,13 +6,13 @@ export default function Visa({photo, sentence, para, info1_t, info2_t, info1, in
     return (
         <div className='visa'>
             <div className='pic'>
-                <h1>{photo}</h1>
+                
             </div>
             <div className='info'>
                 <h2>{sentence}</h2>
                 <span>{para}</span>
                 <ul>
-                    <li>
+                    <li id="res">
                         <div>
                             <img src={info1Pic} alt="" />
                         </div>
@@ -21,7 +21,7 @@ export default function Visa({photo, sentence, para, info1_t, info2_t, info1, in
                             <p>{info1}</p>
                             </div>
                     </li>
-                    <li>
+                    <li id="res">
                         <div>
                             <img src={info2Pic} alt="" />
                         </div>

@@ -1,8 +1,12 @@
 .visa{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     background-color: transparent;
+    background-image: url('../images/bg_be.08b8e2c2.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
     height:100vh;
     padding: 70px;
 }
@@ -45,7 +49,7 @@
 }
 
 .info ul p{
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.3;
     font-size: 0.75rem;
 }
@@ -60,4 +64,54 @@
     width:25px;
     height: 25px;
     margin: 10px;
+}
+
+
+.pic{
+    margin-top: 80px;
+    margin-left:150px;
+    width:343px;
+    height:213px;
+    background-image: url('../images/visa_mask.15d7cbf5.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:480px){
+    .visa{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        background-size: cover;
+        inset: 20px;
+        background-position: 100% center !important;
+    }
+
+    .info h2{
+        font-size: 2rem;
+    }
+
+    .pic{
+        margin: 0px;
+    }
+
+    .info span{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .info{
+        height: 25%;
+        width: 100%;
+    }
+
+    #res{
+        flex-direction: column;
+    }
+
+    #res p{
+        display: none;
+    }
 }
