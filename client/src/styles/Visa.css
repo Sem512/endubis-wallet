@@ -77,11 +77,11 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media(max-width:480px){
     .visa {
-        margin-top: 200px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -89,7 +89,7 @@
         margin: 0px;
         background-image: url('../images/bg_be.08b8e2c2.png');
         background-size: cover;
-        background-position: top; /* Positions the image at the top-right corner */
+        background-position: center; /* Positions the image at the top-right corner */
         background-repeat: no-repeat; /* Prevents repeating */
         width: 100%;
         box-sizing: border-box;

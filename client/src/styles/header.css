@@ -57,8 +57,67 @@ header ul li a span:hover{
   font-size: 1.8rem;
 }
 
-@media(max-width:480px){
-  header{
-   
-  }
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 100;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100%; /* Take full height of the header */
 }
+
+.hamburger .line {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+
+
+  /* Mobile Menu */
+  @media (max-width: 480px) {
+
+    header{
+      justify-content: space-around;
+    }
+
+    header ul {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      position: fixed; /* Cover the entire screen */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      background-color: rgba(235, 0, 70, 1); /* Match header background */
+      justify-content: center; /* Center menu items vertically */
+      align-items: center; /* Center menu items horizontally */
+      padding: 0;
+      margin: 0;
+      z-index: 98; /* Ensure it's below the hamburger icon */
+    }
+  
+    header ul.open {
+      display: flex; /* Show the menu when open */
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger icon on smaller screens */
+    }
+  
+    /* Hamburger Icon Animation */
+    .hamburger.open .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 10px);
+    }
+  
+    .hamburger.open .line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.open .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -10px);
+    }
+  }

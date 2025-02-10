@@ -18,10 +18,12 @@
   background-color: rgba(235, 0, 70, 1);
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .color-white {
   background-color: white;
+  overflow-x: hidden;
 }
 
 .App div:nth-child(6) .pic{
