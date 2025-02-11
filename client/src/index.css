@@ -14,18 +14,20 @@ body {
   overflow-x: hidden;
 }
 
+[data-color="red"] > div,[data-color="white"]>div{
+  scroll-snap-align: start;
+  height: 100vh; /* Ensure consistent height */
+}
+
 html{
   scroll-snap-type: y mandatory;
-  scroll-padding-bottom: 10px;
   scroll-padding-top: 40px;
 }
 
-.App>div{
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
-  scroll-snap-stop:always;
-  overflow-x: hidden;
+::-webkit-scrollbar {
+  display: none;
 }
+
 
 
 @media(max-width:480px){

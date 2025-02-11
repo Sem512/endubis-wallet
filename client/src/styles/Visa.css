@@ -8,7 +8,6 @@
     background-position: left center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height:90vh;
     padding: 70px;
 }
 .info{
@@ -77,23 +76,21 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 @media(max-width:480px){
     .visa {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0px;
         margin: 0px;
-        background-image: url('../images/bg_be.08b8e2c2.png');
         background-size: cover;
         background-position: center; /* Positions the image at the top-right corner */
         background-repeat: no-repeat; /* Prevents repeating */
         width: 100%;
         box-sizing: border-box;
-        z-index: 10;
+        
     }
 
     .info h2{
@@ -103,7 +100,6 @@
     .pic{
         display: flex;
         margin: 0px;
-        height: 100%;
     }
 
     .info span{

@@ -1,7 +1,6 @@
 .Fiat{
     background-color: transparent;
     display:flex;
-    height:100vh;
     padding: 0 60px;
     background-image: url('../images/bg_licensed.svg');
     background-position: 100% 120%;

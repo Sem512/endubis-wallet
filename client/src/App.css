@@ -1,16 +1,18 @@
-.BlankSpace{
+.BlankSpace {
   background-color: rgba(235, 0, 70, 1);
   position: sticky;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 10;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 100;
   height: 7vh;
 }
 
 .App{
   transition: background-color 0.5s ease;
   width: 100%;
-  overflow-x: hidden;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  position: relative; /* Ensure sticky elements work correctly */
 }
 
 
@@ -26,7 +28,7 @@
   overflow-x: hidden;
 }
 
-.App div:nth-child(6) .pic{
+.App div:nth-child(5) .pic{
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -39,21 +41,21 @@
   background-attachment: fixed;
 }
 
-.App div:nth-child(6) .info h2::before{
+.App div:nth-child(5) .info h2::before{
   content: "Own";
   color: black;
 }
 
-.App div:nth-child(6) .visa{
+.App div:nth-child(5) .visa{
   background-image: none;
 }
 
 @media(max-width:480px){
-  .App div:nth-child(6) .pic{
+  .App div:nth-child(5) .pic{
     display: none;
   }
 
-  .App div:nth-child(6) .info{
+  .App div:nth-child(5) .info{
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,12 +67,12 @@
     background-repeat: no-repeat;
   }
   
-  .App div:nth-child(6){
+  .App div:nth-child(5){
     margin: 0px;
     padding:0px;
   }
 
-  .App div:nth-child(6) #res p{
+  .App div:nth-child(5) #res p{
     display: block;
 }
 

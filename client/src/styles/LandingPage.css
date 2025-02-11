@@ -2,7 +2,6 @@
 
 .landing-page{
     opacity: 1;
-    height: 90vh;
     display: flex;
     background-image: url('../images/bg_hero.webp');
     background-size: contain;

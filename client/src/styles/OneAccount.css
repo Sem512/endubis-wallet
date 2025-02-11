@@ -1,7 +1,6 @@
 .OneAccount{
     display: flex;
     width: 100%;
-    height: 90vh;
     background-color: transparent;
     background-image: url('../images/bg_one_account.webp');
     background-size: contain;
@@ -10,7 +9,6 @@
     background-attachment: fixed;
     object-fit: contain;
     inset:60px;
-    height: 90vh;
 }
 
 

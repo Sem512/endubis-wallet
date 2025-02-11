@@ -1,11 +1,11 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import OneAccount from './components/OneAccount';
 import Visa from './components/Visa';
-import Fiat from './components/Fiat';
 import Phones from './components/Phones';
+import Fiat from './components/Fiat';
 import Paragraph from './components/Paragraph';
 import Footer from './components/Footer';
 
@@ -35,82 +35,97 @@ function App() {
   };
 
   const [activeColor, setActiveColor] = useState('');
+  const sectionsRef = useRef([]); // Ref to store section elements
 
   useEffect(() => {
-    const handleScroll = () => {
-      const windowHeight = window.innerHeight;
-      const scrollPosition = window.scrollY + (windowHeight / 3);
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Update active color based on the section's data-color attribute
+            const color = entry.target.getAttribute('data-color');
+            setActiveColor(color);
 
-      const panels = document.querySelectorAll('.App > div');
+            // Snap to the section when it intersects
+            entry.target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Snap when 50% of the section is visible
+      }
+    );
 
-      panels.forEach((panel) => {
-        const panelTop = panel.offsetTop;
-        const panelHeight = panel.offsetHeight;
+    // Observe each section
+    sectionsRef.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
 
-        if (panelTop <= scrollPosition && panelTop + panelHeight > scrollPosition) {
-          const color = panel.getAttribute('data-color');
-          setActiveColor(color);
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call to set the color based on the initial scroll position
-
+    // Cleanup observer on unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      sectionsRef.current.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
     };
   }, []);
 
   return (
-    <div className={`App ${activeColor ? 'color-' + activeColor : ''}`}>
+    <>
+      {/* Header outside the App div */}
       <Header />
-      <div data-color="red">
-        <LandingPage />
+
+      {/* App content with scroll snapping */}
+      <div className={`App ${activeColor ? 'color-' + activeColor : ''}`}>
+        <div data-color="red" ref={(el) => (sectionsRef.current[0] = el)}>
+          <LandingPage />
+        </div>
+        <div data-color="white" ref={(el) => (sectionsRef.current[1] = el)}>
+          <OneAccount />
+        </div>
+        <div data-color="red" ref={(el) => (sectionsRef.current[2] = el)}>
+          <Visa
+            photo={lst.photo}
+            sentence={lst.sentence}
+            para={lst.para}
+            info1_t={lst.info1_t}
+            info2_t={lst.info2_t}
+            info1={lst.info1}
+            info2={lst.info2}
+            info1Pic={lst.info1Pic}
+            info2Pic={lst.info2Pic}
+          />
+        </div>
+        <div data-color="white" ref={(el) => (sectionsRef.current[3] = el)}>
+          <Phones />
+        </div>
+        <div data-color="red" ref={(el) => (sectionsRef.current[4] = el)}>
+          <Visa
+            photo={man.photo}
+            sentence={man.sentence}
+            para={man.para}
+            info1_t={man.info1_t}
+            info2_t={man.info2_t}
+            info1={man.info1}
+            info2={man.info2}
+            info1Pic={man.info1Pic}
+            info2Pic={man.info2Pic}
+          />
+        </div>
+        <div data-color="white" ref={(el) => (sectionsRef.current[5] = el)}>
+          <Fiat />
+        </div>
+        <div data-color="red" ref={(el) => (sectionsRef.current[6] = el)}>
+          <Paragraph />
+        </div>
+        <div data-color="white" ref={(el) => (sectionsRef.current[7] = el)}>
+          <Footer />
+        </div>
       </div>
-      <div data-color="white">
-        <OneAccount />
-      </div>
-      <div data-color="red">
-        <Visa
-          photo={lst.photo}
-          sentence={lst.sentence}
-          para={lst.para}
-          info1_t={lst.info1_t}
-          info2_t={lst.info2_t}
-          info1={lst.info1}
-          info2={lst.info2}
-          info1Pic={lst.info1Pic}
-          info2Pic={lst.info2Pic}
-        />
-      </div>
-      <div data-color="white">
-        <Phones />
-      </div>
-      <div data-color="red">
-        <Visa
-          photo={man.photo}
-          sentence={man.sentence}
-          para={man.para}
-          info1_t={man.info1_t}
-          info2_t={man.info2_t}
-          info1={man.info1}
-          info2={man.info2}
-          info1Pic={man.info1Pic}
-          info2Pic={man.info2Pic}
-        />
-      </div>
-      <div data-color="white">
-        <Fiat />
-      </div>
-      <div data-color="red">
-        <Paragraph />
-      </div>
-      <div data-color="white">
-        <Footer />
-      </div>
-      <div className='BlankSpace'/>
-    </div>
+
+      {/* BlankSpace outside the App div */}
+      <div className="BlankSpace" />
+    </>
   );
 }
 
